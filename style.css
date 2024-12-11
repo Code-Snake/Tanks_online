@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./Stena.png');
+}
+
+#game {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #eee;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.tank {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+    background-image: url('./tank.png');
+    transform-origin: center; /* Поворот будет происходить вокруг центра */
+}
+
+
+
+
+.tank-barrel {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #000;
+    top: 50%;
+    left: 100%;
+    transform-origin: 0 50%;
+    margin-top: -5px;
+}
+
+.bullet {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-image: url('./bullet.png');
+    border-radius: 50%;
+}
+
+.obstacle {
+    background-color: #555;
+    border: 0px solid #333;
+    background-image: url('./Stena.png');
+}
+
+#scoreboard{
+    position: absolute;
+    top: 70px; 
+    left: 100px;
+    padding: 9px;
+    background-image: url("./score.png");
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+   
+}
+
+#scores{
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
