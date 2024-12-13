@@ -30,7 +30,7 @@ const obstacles = [
 let tankDirection = 'right'; // 'up', 'down', 'left', 'right'
 
 // Устанавливаем соединение с сервером
-const ws = new WebSocket('ws://25.12.196.61:8080');
+const ws = new WebSocket('ws://localhost:8080');
 
 function updateScoreboard(scores) {
     const scoreboard = document.getElementById('scores');
